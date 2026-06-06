@@ -17,12 +17,10 @@ public class HoenScannerApplication extends Application<HoenScannerConfiguration
 
     @Override
     public void initialize(final Bootstrap<HoenScannerConfiguration> bootstrap) {
-
     }
 
     @Override
     public void run(final HoenScannerConfiguration configuration, final Environment environment) {
-
+        environment.jersey().register(new SearchResource());
     }
-
 }
